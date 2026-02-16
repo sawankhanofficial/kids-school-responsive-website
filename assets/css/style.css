@@ -1,0 +1,134 @@
+/* CSS Reset Code */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/*=========================
+    Shared Style 
+===========================*/
+:root{
+    --color-orange:#FEA301;
+    --color-blue:#01ACFD;
+    --color-pest:#05D4DF;
+    --color-purple:#5D58EF;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+
+
+
+
+
+/*============================
+    Header Section Design 
+==============================*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0px;
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:8px;
+    cursor: pointer;
+}
+.brand span{
+    color:#000000;
+    font-size:24px;
+    font-weight:600;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:24px; 
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size:17px;
+    font-weight:600;
+}
+.nav-btn{
+    padding:12px 24px;
+    background-color: var(--color-orange);
+    color:#ffffff;
+    font-size:16px;
+    font-weight:600;
+    border:2px solid var(--color-orange);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background: transparent;
+    color: var(--color-orange);
+}
+
+
+.hamberger-menu{
+    display:none;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*============================
+    Media Query 
+==============================*/
+
+/* Smaller Device */
+@media screen and (max-width:576px){
+    nav{
+        border-bottom: 2px solid var(--color-orange);
+    }
+    .brand span, .navlinks, .nav-btn{
+        display: none;
+    }
+    .hamberger-menu{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/* Medium */
+@media screen and (min-width:576px) and (max-width:768px){
+    nav{
+        border-bottom: 2px solid var(--color-orange);
+    }
+    .navlinks{
+        display: none;
+    }
+
+}
