@@ -130,6 +130,88 @@ nav{
 
 
 
+/*============================
+    Header Section Design 
+==============================*/
+#curriculum{
+    margin:80px 0px;
+}
+
+.curriculum-title{
+    text-align: center;
+    color: #000000;
+    font-size: 46px;
+}
+.curriculum-content{
+    background-image:url(../images/bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.curriculum-item{
+    margin:80px 0px;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+.curriculum-box-1{
+    background: linear-gradient(to bottom, #DEF5FF, #FFFFFF);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.curriculum-box-2{
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF);
+}
+.curriculum-box-3{
+    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF);
+}
+
+.box-title{
+    color: #202020;
+    font-size: 25px;
+    margin:15px 0px;
+}
+.box-description{
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.box-link{
+    color:#64C8FF;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box-link-2{
+    color: #F0AA00;
+}
+.box-title-2{
+    margin-top: 25px;
+}
+.box-link-3{
+    color:#8700FF;
+}
+
+.curriculm-arrow-btn{
+    text-align: center;
+}
+.curriculm-arrow-btn i{
+    background-color: var(--color-orange);
+    padding:10px;
+    border-radius: 48%;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -168,6 +250,16 @@ nav{
     .banner-image img{
         width: 100%;
     }
+
+    .curriculum-title{
+        font-size: 32px;
+    }
+    .curriculum-item{
+        flex-direction: column;
+    }
+    .curriculm-arrow-btn{
+        display: none;
+    }
 }
 
 
@@ -200,6 +292,13 @@ nav{
     }
     .banner-image img{
         width: 100%;
+    }
+
+    .curriculum-title{
+        font-size: 32px;
+    }
+    .curriculum-item{
+        flex-direction: column;
     }
 
 }
